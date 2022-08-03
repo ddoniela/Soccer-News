@@ -14,15 +14,12 @@
             android:id="@+id/ivThumbnail"
             android:layout_width="0dp"
             android:layout_height="@dimen/news_image_height"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:contentDescription="@string/cd_news_image"
+            android:src="@color/teal_200"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            android:src="@color/black"
-            tools:srcCompat="@tools:sample/avatars"
-            android:contentDescription="@string/cd_news_image" />
+            tools:srcCompat="@tools:sample/avatars" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tvTitle"
@@ -33,10 +30,9 @@
             android:layout_marginEnd="@dimen/default_margin"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ivThumbnail"
-            tools:text="Botafogo vence Palmeiras" />
+            tools:text="Ferroviária vence Palmeiras" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tvDescription"
@@ -48,7 +44,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvTitle"
-            tools:text="As meninas do Botafogo derrotaram o Palmeiras no último domingo." />
+            tools:text="As meninas da Ferrinha derrotaram o Palmeiras no último domingo." />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btOpenLink"
@@ -68,27 +64,31 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/default_margin"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:contentDescription="@string/cd_favorite_icon"
+            android:focusable="true"
+            android:padding="4dp"
             app:layout_constraintBottom_toBottomOf="@+id/btOpenLink"
             app:layout_constraintEnd_toStartOf="@+id/ivShare"
             app:layout_constraintTop_toTopOf="@+id/btOpenLink"
-            app:srcCompat="@drawable/ic_favorite"
-            android:contentDescription="@string/cd_favorite_icon"
-            android:background="?android:selectableItemBackgroundBorderless"
-            android:clickable="true"
-            android:padding="4dp"/>
+            app:srcCompat="@drawable/ic_favorite" />
+        <!-- Referência: Incluir o Efeito de Ripple (https://stackoverflow.com/a/61012286/3072570) -->
 
         <ImageView
             android:id="@+id/ivShare"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/default_margin"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:contentDescription="@string/cd_share_icon"
+            android:focusable="true"
+            android:padding="4dp"
             app:layout_constraintBottom_toBottomOf="@+id/btOpenLink"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/btOpenLink"
-            app:srcCompat="@drawable/ic_share"
-            android:contentDescription="@string/cd_share_icon"
-            android:background="?android:selectableItemBackgroundBorderless"
-            android:clickable="true"
-            android:padding="4dp"/>
+            app:srcCompat="@drawable/ic_share" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </com.google.android.material.card.MaterialCardView>
