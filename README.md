@@ -1,6 +1,8 @@
 # Soccer News App
 
-App Nativo Android de Notícias Sobre Futebol Feminino (Mês da Mulher). Este repositório foi organizado em algumas branches que representam as implementações realizadas durante os seguintes conteúdos/vídeos:
+App Nativo Android de Notícias Sobre Futebol Feminino (Mês da Mulher). Este repositório foi organizado de acordo com aulas do curso de Java da Digital Innovation One.
+
+Para ver as branches do curso, entrar nos seguintes conteúdos/vídeos:
 
 1. [Android Jetpack e Material Design: Criando Apps Nativos Poderosos](https://docs.google.com/presentation/d/1ECgeecAT5A1Mh0Mh-mbs4R2_wb4AHJLE/edit?usp=sharing&ouid=107980611913120181649&rtpof=true&sd=true) (Slides)
     - [release/android-jetpack-material-design-criando-apps-nativos-poderosos](https://github.com/digitalinnovationone/soccer-news-app/tree/release/android-jetpack-material-design-criando-apps-nativos-poderosos)
